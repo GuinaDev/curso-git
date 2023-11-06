@@ -1,23 +1,5 @@
-git init
-git config --global user.name "nome usuario"
-git config --global user.email "email do usuario"
-git status
-git add .gitignore
-git add .
-git commit -m "descrição do que foi feito"
-git log --oneline
-git init --bare
-git remote
-git remote add local D:/desenvolvimento/cursogit/servidor/
-git remote -v
-git push 
-git pull local master //obtem os dados
-git push local master //envia os dade
-git clone D:/desenvolvimento/cursogit/servidor/ projeto
-git remote rename origin local
-
-
 git init //criar novo repositorio
+git add .gitignore //criar um arquivo .gitignore e lista nele o que vai ser ignorado
 git status //Verificar estado dos arquivos/diretórios
 git add meu_arquivo.txt //Adicionar um arquivo em específico
 git add meu_diretorio //Adicionar um diretório em específico
