@@ -1,0 +1,16 @@
+git init
+git config --global user.name "nome usuario"
+git config --global user.email "email do usuario"
+git status
+git add .gitignore
+git add .
+git commit -m "descrição do que foi feito"
+git log --oneline
+git init --bare
+git remote
+git remote add local D:/desenvolvimento/cursogit/servidor/
+git remote -v
+git push 
+git pull local master
+git clone D:/desenvolvimento/cursogit/servidor/ projeto
+git remote rename origin local
