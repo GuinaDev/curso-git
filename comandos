@@ -26,3 +26,25 @@ Atualizar repositório local de acordo com o repositório remoto
 git pull //Atualizar os arquivos no branch atual
 git fetch //Buscar as alterações, mas não aplica-las no branch atual
 git clone git@github.com:leocomelli/curso-git.git //Clonar um repositório remoto já existente
+-------------------------------------------------------------
+git branch //mostra os branch criado
+git branch nome_branch
+git checkout nome_branch //para acessar
+git checkout -b nome_branch //para criar e acessar
+git commit -m "descrição" depoi -> git merge nome_do_outro_branch //commit de juncao de duas branch
+git rebase titulo //adiciona os commits na master gerando uma unica linha
+obs.: O merge junta os trabalhos e gera um merge commit. O rebase aplica os commits de outra branch na branch atual.
+--------------------------------------------------------------
+Alternativa correta! Com o git checkout nós desfazemos uma alteração que ainda não foi adicionada ao index ou stage, 
+ou seja, antes do git add. Depois de adicionar com git add, para desfazer uma alteração, precisamos tirá-la deste 
+estado, com git reset. Agora, se já realizamos o commit, o comando git revert pode nos salvar.
+------------------------------------------------------------
+Alternativa correta! Quando precisamos pausar o desenvolvimento de alguma funcionalidade, ou correção, antes de 
+finalizar, talvez não seja interessante realizar um commit, pois o nosso código pode não estar funcionando ainda. 
+Nesse caso é interessante salvar o trabalho para podermos voltar a ele depois.
+git stash //salvar em local temporario
+git stash list// mostra o que esta salvo
+git stash apply 0//atualiza com o que foi salvo
+git stash drop//remove 
+git stash pop//apaga da stach e atualiza
+----------------------------------------------------------
