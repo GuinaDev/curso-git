@@ -1,3 +1,5 @@
+//https://gist.github.com/leocomelli/2545add34e4fec21ec16
+
 git init //criar novo repositorio
 git add .gitignore //criar um arquivo .gitignore e lista nele o que vai ser ignorado
 git status //Verificar estado dos arquivos/diretórios
