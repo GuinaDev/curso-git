@@ -11,6 +11,34 @@ git remote
 git remote add local D:/desenvolvimento/cursogit/servidor/
 git remote -v
 git push 
-git pull local master
+git pull local master //obtem os dados
+git push local master //envia os dade
 git clone D:/desenvolvimento/cursogit/servidor/ projeto
 git remote rename origin local
+
+
+git init //criar novo repositorio
+git status //Verificar estado dos arquivos/diretórios
+git add meu_arquivo.txt //Adicionar um arquivo em específico
+git add meu_diretorio //Adicionar um diretório em específico
+git add . //Adicionar todos os arquivos/diretórios
+Adicionar um arquivo que esta listado no .gitignore (geral ou do repositório)//git add -f arquivo_no_gitignore.txt
+git commit meu_arquivo.txt //Comitar um arquivo
+git commit meu_arquivo.txt meu_outro_arquivo.txt //Comitar vários arquivos
+git commit meuarquivo.txt -m "minha mensagem de commit" //Comitar informando mensagem
+git rm meu_arquivo.txt //Remover arquivo
+git rm -r diretorio //Remover diretório
+git log //Exibir histórico
+git log --oneline //Exibir informações resumidas em uma linha (hash completa e comentário)
+git remote //Exibir os repositórios remotos
+git remote -v
+git remote add origin git@github.com:leocomelli/curso-git.git //Vincular repositório local com um repositório remoto
+git remote show origin //Exibir informações dos repositórios remotos
+git remote rename origin curso-git //Renomear um repositório remoto
+git remote rm curso-git //Desvincular um repositório remoto
+git push -u origin master //Enviar arquivos/diretórios para o repositório remoto obs.: O primeiro push de um repositório deve conter o nome do repositório remoto e o branch.
+git push //Os demais pushes não precisam dessa informação
+Atualizar repositório local de acordo com o repositório remoto
+git pull //Atualizar os arquivos no branch atual
+git fetch //Buscar as alterações, mas não aplica-las no branch atual
+git clone git@github.com:leocomelli/curso-git.git //Clonar um repositório remoto já existente
